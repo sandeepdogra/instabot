@@ -6,5 +6,4 @@ from get_own_post import  get_own_post
 self_info()
 
 #fetching our own recent data
-result = get_own_post()
-print result
+get_own_post()
