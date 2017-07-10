@@ -1,9 +1,8 @@
 import requests
-from constants import BASE_URL, APP_ACCESS_TOKEN
-#from get_user_post import get_user_post
+from instabot import BASE_URL, APP_ACCESS_TOKEN
 from get_user_post import get_user_post
-username = "vineet_chauhan9"
-def like_a_post(insta_username):
+
+def like_user_post(insta_username):
     # fuction is created for like post of user
 
     media_id = get_user_post(insta_username)
@@ -16,4 +15,3 @@ def like_a_post(insta_username):
         print "Post Liked Successfully"
     else:
         print "Unable to like post"
-like_a_post(username)
