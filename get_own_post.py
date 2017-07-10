@@ -1,6 +1,6 @@
 import requests
 import urllib
-from constants import BASE_URL, APP_ACCESS_TOKEN
+from instabot import BASE_URL, APP_ACCESS_TOKEN
 
 def get_own_post():
     #function logic
