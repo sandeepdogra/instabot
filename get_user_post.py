@@ -1,8 +1,7 @@
 import requests
 import urllib
-from constants import APP_ACCESS_TOKEN, BASE_URL
+from instabot import APP_ACCESS_TOKEN, BASE_URL
 from get_user_id import get_user_id
-
 def get_user_post(insta_username):
     #function logic
     user_id = get_user_id(insta_username)
@@ -20,10 +19,9 @@ def get_user_post(insta_username):
             image_name = user_media['data'][0]['id'] + '.jpeg'
             image_url = user_media['data'][0]['images']['standard_resolution']['url']
             urllib.urlretrieve(image_url, image_name)
+            print "your image has been downloaded successfully"
             return user_media['data'][0]['id']
-            print user_media['data'][0]['id']
         else:
             print "There is no recent post!"
     else:
         print 'Status code other than 200 received!'
-#get_user_post(insta_username="kirangarg95")
