@@ -4,6 +4,8 @@ from get_own_post import *
 from like_user_post import *
 from comment_user_post import *
 from get_user_post import *
+from like_list import *
+from comment_list import *
 
 
 def insta_bot():
@@ -16,7 +18,9 @@ def insta_bot():
         print "4.Get the recent post of a user by username\n"
         print "5.Like the recent post of a user\n"
         print "6.Make a comment on the recent post of a user\n"
-        print "7.Exit"
+        print "7.list of likes on recent post of a user\n"
+        print "8.list of comments o a recnet post of a user\n"
+        print "9.Exit"
 
         choice = int(raw_input("Enter you choice: "))
         if choice == 1:
@@ -35,7 +39,13 @@ def insta_bot():
         elif choice == 6:
            insta_username = raw_input("Enter the username of the user: ")
            comment_user_post(insta_username)
-        elif choice == 7:
+        elif choice == 7 :
+            insta_username = raw_input("Enter the username of the user:")
+            like_list(insta_username)
+        elif choice == 8:
+            insta_username = raw_input("Enter the username of the user:")
+            comment_list(insta_username)
+        elif choice == 9:
             exit()
         else:
             print "wrong choice"
