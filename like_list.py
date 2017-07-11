@@ -1,7 +1,6 @@
 import requests
 from get_post_id import get_post_id
 from constant import BASE_URL,APP_ACCESS_TOKEN
-username="anky112q"
 def like_list(insta_username):
     media_id = get_post_id(insta_username)
     request_url = (BASE_URL + 'media/%s/likes?access_token=%s') % (media_id,APP_ACCESS_TOKEN)
@@ -15,4 +14,4 @@ def like_list(insta_username):
     else:
          print "wrong input"
 
-like_list(username)
+
