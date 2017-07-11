@@ -1,6 +1,6 @@
 import requests
 import urllib
-from instabot import BASE_URL, APP_ACCESS_TOKEN
+from constant import BASE_URL, APP_ACCESS_TOKEN
 
 def get_own_post():
     #function logic
@@ -14,8 +14,10 @@ def get_own_post():
             image_name = own_media['data'][0]['id'] + '.jpeg'
             image_url = own_media['data'][0]['images']['standard_resolution']['url']
             urllib.urlretrieve(image_url, image_name)
-            return own_media['data'][0]['id']
             print 'Your image has been downloaded!'
+            print own_media['data'][0]['id']
+            return own_media['data'][0]['id']
+
         else:
             print 'Post does not exist!'
     else:

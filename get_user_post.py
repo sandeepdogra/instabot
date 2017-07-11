@@ -1,6 +1,6 @@
 import requests
 import urllib
-from instabot import APP_ACCESS_TOKEN, BASE_URL
+from constant import APP_ACCESS_TOKEN, BASE_URL
 from get_user_id import get_user_id
 def get_user_post(insta_username):
     #function logic

@@ -1,2 +1,2 @@
-from main import start_bot
-start_bot()
+from instabot import insta_bot
+insta_bot()

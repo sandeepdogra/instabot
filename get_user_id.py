@@ -1,5 +1,5 @@
 import requests
-from instabot import APP_ACCESS_TOKEN,BASE_URL
+from constant import APP_ACCESS_TOKEN,BASE_URL
 
 def get_user_id(insta_username):
     #functions for getting id of a user by username

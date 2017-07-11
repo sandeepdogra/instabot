@@ -1,5 +1,5 @@
 import requests
-from instabot import APP_ACCESS_TOKEN, BASE_URL
+from constant import APP_ACCESS_TOKEN, BASE_URL
 from get_user_id import get_user_id
 username = "anky112q"
 def get_user_info(insta_username):
