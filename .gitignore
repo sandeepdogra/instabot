@@ -1,5 +1,3 @@
-	.idea/*
-	*.pyc
-	*.pyo
-	migrations/*
-	settings.py
+.idea/*
+*.pyc
+*.pyo
