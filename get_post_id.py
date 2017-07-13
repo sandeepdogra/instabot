@@ -3,6 +3,7 @@ from get_user_id import get_user_id
 import requests
 
 def get_post_id(insta_username):
+    #function logic
     user_id = get_user_id(insta_username)
     if user_id == None:
         print 'User does not exist!'

@@ -1,7 +1,9 @@
 import requests
 from constant import BASE_URL, APP_ACCESS_TOKEN
 from get_user_post import get_user_post
+
 def comment_user_post(insta_username):
+    #function logic
     media_id = get_user_post(insta_username)
     print media_id
     message = raw_input("Enter your Message: ")
@@ -15,3 +17,5 @@ def comment_user_post(insta_username):
         print "Post comment Successfully"
     else:
         print "Unable to comment on posts"
+
+#comment_user_post(anky112q)

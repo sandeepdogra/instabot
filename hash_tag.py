@@ -31,4 +31,5 @@ def analyse_user(user_id):
             print "No posts to show"
     else:
         print "Error: Not 200"
-#analyse_user(5684266277)
+
+#analyse_user(anky112q)

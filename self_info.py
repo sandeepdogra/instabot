@@ -1,5 +1,6 @@
 import requests
 from constant import APP_ACCESS_TOKEN,BASE_URL
+
 def self_info():
     #logic of the function
     request_url = (BASE_URL + 'users/self/?access_token=%s') % (APP_ACCESS_TOKEN)
@@ -16,3 +17,5 @@ def self_info():
             print 'User does not exist!'
     else:
         print 'Status code other than 200 received!'
+
+#self_info(dograsandeep_)
